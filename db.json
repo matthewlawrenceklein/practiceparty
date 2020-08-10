@@ -1,0 +1,18 @@
+{
+  "party": [
+    {
+      "id": 1,
+      "name": "tyler turns 12!",
+      "type": "birthday",
+      "byo": true,
+      "likes": 0
+    },
+    {
+      "id": 2,
+      "name": "my dog is old",
+      "type": "general celebration",
+      "byo": true,
+      "likes": 0
+    }
+  ]
+}
