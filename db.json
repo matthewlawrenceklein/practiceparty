@@ -13,6 +13,20 @@
       "type": "general celebration",
       "byo": true,
       "likes": 0
+    },
+    {
+      "name": "bill died",
+      "type": "mourning party",
+      "byo": "on",
+      "likes": 0,
+      "id": 3
+    },
+    {
+      "name": "i have a hamster",
+      "type": "he is good",
+      "byo": "on",
+      "likes": 0,
+      "id": 4
     }
   ]
 }

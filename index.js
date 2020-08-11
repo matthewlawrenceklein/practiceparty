@@ -24,7 +24,7 @@ function renderParty(party){
     let div = document.getElementById('party-zone')
     let partyInfo = document.createElement('div')
     
-    partyInfo.innerHTML = ` a party called ${party.name}, a ${party.type} party <button id="like-btn"> LIKE THIS PARTY </button> this party has ${party.likes} likes! <hr>`
+    partyInfo.innerHTML = ` a party called ${party.name}, a ${party.type} party <button id="like-btn" data-id=${party.id}> LIKE THIS PARTY </button> this party has <span id="likes-num">${party.likes}</span> likes! <hr>`
 
 
     div.append(partyInfo)
@@ -75,7 +75,12 @@ function likeListener(){
     div.addEventListener('click', function(event){
 
         if(event.target.id === 'like-btn'){
-            console.log(this.dataset);
+            console.log(event.target.dataset.id);
+
+            if (party.id === event.target.dataset.id){
+                party.likes += 1
+            }
+
         }
 
         // const reqObj = {
